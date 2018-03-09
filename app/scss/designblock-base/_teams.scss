@@ -1,0 +1,30 @@
+@import './mixins';
+@import './variables';
+
+.team-1.air-block {
+  img {
+    border-bottom: solid 5px $primary-color;
+    @include border-radius(0 !important);
+  }
+
+  .air-box {
+    padding: 0;
+
+    .content {
+      padding: 20px;
+    }
+  }
+}
+
+.team-2.air-block {
+  img {
+    @include border-radius(100% !important);
+  }
+}
+
+.team-3.air-block {
+  img {
+    @include border-radius(100% !important);
+    @include froala-box-shadow(1);
+  }
+}

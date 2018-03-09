@@ -1,0 +1,72 @@
+@import './buttons';
+@import './teams';
+@import './mixins';
+@import './variables';
+
+header {
+  background-color: $bg-header;
+
+  .navbar-nav {
+    .menu-item a ,
+    .nav-item a {
+      color: $link-color;
+      text-transform: uppercase;
+      font-weight: 400;
+      letter-spacing: .5px;
+      //font-size: 0.857142857142857em;
+      text-decoration: none;
+
+      &:hover {
+        color: $link-color-active;
+      }
+    }
+
+    .active {
+        &.menu-item  a,
+        &.nav-item a{
+        color: $link-color-active;
+      }
+    }
+  }
+
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#444' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+
+  &.bg-dark {
+    .navbar-nav {
+    
+      .menu-item  a,
+      a.nav-link{
+        color: #dcdcdc;
+        text-shadow: 1px 1px 1px #000;
+
+        &:hover {
+          color: #ff9552;
+        }
+      }
+
+      .current-menu-item{
+        a {
+            color: #ffb930;
+            text-shadow: 1px 1px 1px #000;
+        }
+      }
+    }
+
+    .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#fff' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    }
+  }
+}
+
+header + header {
+  border-top: solid 1px #EEE;
+}
+
+.navbar-expand-md .navbar-nav .menu-item a{
+    padding-right: .5rem;
+    padding-left: .5rem;
+    margin:0.5em 0em;
+    display:block;
+}

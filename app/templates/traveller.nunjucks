@@ -1,0 +1,44 @@
+<!-- traveller.nunjucks -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Indonesia Traveller</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+<!-- build:css css/traveller-group.css -->
+<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="bower_components/slick-carousel/slick/slick.css">
+<link rel="stylesheet" href="bower_components/slick-carousel/slick/slick-theme.css">
+<link rel="stylesheet" href="bower_components/magnific-popup/dist/magnific-popup.css">
+<!-- endbuild -->
+<link rel="stylesheet" href="css/traveller.css">
+
+</head>
+<body>
+
+<!-- You write code for this content block in another file -->
+{% block content %}{% endblock %}
+
+
+<!-- JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+{# <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> #}
+
+<!-- build:js js/traveller-group.js -->
+<script src="bower_components/jquery/dist/jquery.js"></script> 
+<script src="bower_components/popper.js/dist/umd/popper.min.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="bower_components/jquery.countdown/dist/jquery.countdown.min.js"></script>
+<script src="bower_components/slick-carousel/slick/slick.min.js"></script>
+<script src="bower_components/jquery-backstretch/jquery.backstretch.min.js"></script>
+<script src="bower_components/youtubeBackground/src/jquery.youtubebackground.js"></script>
+<script src="js/particles.js"></script>
+<script src="bower_components/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+
+<!-- endbuild -->
+<script src="js/traveller.js"></script>
+
+</html>

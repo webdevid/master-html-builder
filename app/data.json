@@ -1,0 +1,674 @@
+{
+    "images": [{
+        "src": "image-one-preview.png",
+        "alt": "Image one alt text"
+    }, {
+        "src": "image-two-preview.png",
+        "alt": "Image two alt text"
+    }],
+    "countdown":[
+    {   
+        "id" : 1,
+        "title" : "The Basic ",
+        "desc" : "  ",
+        "preview" : "images/preview/ct-01-preview.png",
+        "uri" : "ct01.html"
+    },
+    {   
+        "id" : 2,
+        "title" : "The Dot Right Skew ",
+        "desc" : " ",
+        "preview" : "images/preview/ct-02-preview.png",
+        "uri" : "ct02.html"
+    },
+    {   
+        "id" : 3,
+        "title" : "The Box Filled ",
+        "desc" : " ",
+        "preview" : "images/preview/ct-03-preview.png",
+        "uri" : "ct03.html"
+    },
+    {   
+        "id" : 4,
+        "title" : "The Block Filled ",
+        "desc" : " ",
+        "preview" : "images/preview/ct-04-preview.png",
+        "uri" : "ct04.html"
+    },
+    {   
+        "id" : 5,
+        "title" : "The Box Line ",
+        "desc" : " ",
+        "preview" : "images/preview/ct-05-preview.png",
+        "uri" : "ct05.html"
+    },
+    {   
+        "id" : 6,
+        "title" : "The Circle ",
+        "desc" : " ",
+        "preview" : "images/preview/ct-06-preview.png",
+        "uri" : "ct06.html"
+    },
+    {   
+        "id" : 7,
+        "title" : "The Card ",
+        "desc" : "  ",
+        "preview" : "images/preview/ct-07-preview.png",
+        "uri" : "ct07.html"
+    },
+    {   
+        "id" : 8,
+        "title" : "The Deck ",
+        "desc" : "  ",
+        "preview" : "images/preview/ct-08-preview.png",
+        "uri" : "ct08.html"
+    },
+    {   
+        "id" : 9,
+        "title" : "The Bridge ",
+        "desc" : "  ",
+        "preview" : "images/preview/ct-09-preview.png",
+        "uri" : "ct09.html"
+    },
+    {   
+        "id" : 10,
+        "title" : "The Dashed ",
+        "desc" : "  ",
+        "preview" : "images/preview/ct-10-preview.png",
+        "uri" : "ct10.html"
+    },
+    {   
+        "id" : 11,
+        "title" : "The Double Dot ",
+        "desc" : " ",
+        "preview" : "images/preview/ct-11-preview.png",
+        "uri" : "ct11.html"
+    },
+    {   
+        "id" : 12,
+        "title" : "The Speed ",
+        "desc" : " ",
+        "preview" : "images/preview/ct-12-preview.png",
+        "uri" : "ct12.html"
+    }
+    ],
+    "comingsoon_type":[
+    {   
+        "id" : 1,
+        "title" : "Background Image ",
+        "desc" : "  ",
+        "preview" : "images/preview/cb01-preview.png",
+        "uri" : "cb01.html"
+    },
+    {   
+        "id" : 2,
+        "title" : "Background Slideshow ",
+        "desc" : "  ",
+        "preview" : "images/preview/cb02-preview.png",
+        "uri" : "cb02.html"
+    },
+    {   
+        "id" : 3,
+        "title" : "Background Video ",
+        "desc" : "  ",
+        "preview" : "images/preview/cb03-preview.png",
+        "uri" : "cb03.html"
+    },
+    {   
+        "id" : 4,
+        "title" : "Background Gradient",
+        "desc" : "  ",
+        "preview" : "images/preview/cb04-preview.png",
+        "uri" : "cb04.html"
+    },
+    {   
+        "id" : 5,
+        "title" : "Background Color ",
+        "desc" : "  ",
+        "preview" : "images/preview/cb05-preview.png",
+        "uri" : "cb05.html"
+    },
+    {   
+        "id" : 6,
+        "title" : "Background Gradient Animation ",
+        "desc" : "  ",
+        "preview" : "images/preview/cb06-preview.png",
+        "uri" : "cb06.html"
+    },
+    {   
+        "id" : 7,
+        "title" : "Background Kenburn Effect ",
+        "desc" : "  ",
+        "preview" : "images/preview/cb07-preview.png",
+        "uri" : "cb07.html"
+    },
+    {   
+        "id" : 8,
+        "title" : "Background Particle ",
+        "desc" : "  ",
+        "preview" : "images/preview/cb08-preview.png",
+        "uri" : "cb08.html"
+    },
+    {   
+        "id" : 9,
+        "title" : "Background Particle Star ",
+        "desc" : "  ",
+        "preview" : "images/preview/cb09-preview.png",
+        "uri" : "cb09.html"
+    },
+    {   
+        "id" : 10,
+        "title" : "Background Particle Snow ",
+        "desc" : "  ",
+        "preview" : "images/preview/cb10-preview.png",
+        "uri" : "cb10.html"
+    },
+    {   
+        "id" : 11,
+        "title" : "Background Glitch Effect ",
+        "desc" : "  ",
+        "preview" : "images/preview/cb11-preview.png",
+        "uri" : "cb11.html"
+    },
+    {   
+        "id" : 12,
+        "title" : "Background Particle Triangle ",
+        "desc" : "  ",
+        "preview" : "images/preview/cb12-preview.png",
+        "uri" : "cb12.html"
+    },
+    {   
+        "id" : 13,
+        "title" : "Background The Rain ",
+        "desc" : "  ",
+        "preview" : "images/preview/cb13-preview.png",
+        "uri" : "cb13.html"
+    },
+    {   
+        "id" : 14,
+        "title" : "Background AnimeJS ",
+        "desc" : "  ",
+        "preview" : "images/preview/cb14-preview.png",
+        "uri" : "cb14.html"
+    },
+    {   
+        "id" : 15,
+        "title" : "Background Particle Waves",
+        "desc" : "  ",
+        "preview" : "images/preview/cb15-preview.png",
+        "uri" : "cb15.html"
+    }
+    ],
+    "comingsoon_theme":[
+    {   
+        "id" : 1,
+        "title" : "Wedding",
+        "desc" : "  ",
+        "preview" : "images/preview/cpc01-preview.png",
+        "uri" : "cpc01.html"
+    },
+    {   
+        "id" : 2,
+        "title" : "Book Launching",
+        "desc" : "  ",
+        "preview" : "images/preview/cpc02-preview.png",
+        "uri" : "cpc02.html"
+    },
+    {   
+        "id" : 3,
+        "title" : "Apartment",
+        "desc" : "  ",
+        "preview" : "images/preview/cpc03-preview.png",
+        "uri" : "cpc03.html"
+    },
+    {   
+        "id" : 4,
+        "title" : "Outdoor Festival",
+        "desc" : "  ",
+        "preview" : "images/preview/cpc04-preview.png",
+        "uri" : "cpc04.html"
+    },
+    {   
+        "id" : 5,
+        "title" : "Education",
+        "desc" : "  ",
+        "preview" : "images/preview/cpc05-preview.png",
+        "uri" : "cpc05.html"
+    },
+    {   
+        "id" : 6,
+        "title" : "Corporate",
+        "desc" : "  ",
+        "preview" : "images/preview/cpc06-preview.png",
+        "uri" : "cpc06.html"
+    },
+    {   
+        "id" : 7,
+        "title" : "Barber Shop",
+        "desc" : "  ",
+        "preview" : "images/preview/cpc07-preview.png",
+        "uri" : "cpc07.html"
+    },
+    {   
+        "id" : 8,
+        "title" : "Music Festival",
+        "desc" : "  ",
+        "preview" : "images/preview/cpc08-preview.png",
+        "uri" : "cpc08.html"
+    },
+    {   
+        "id" : 9,
+        "title" : "Green Garden",
+        "desc" : "  ",
+        "preview" : "images/preview/cpc09-preview.png",
+        "uri" : "cpc09.html"
+    },
+    {   
+        "id" : 10,
+        "title" : "Fashion Designer",
+        "desc" : "  ",
+        "preview" : "images/preview/cpc10-preview.png",
+        "uri" : "cpc10.html"
+    },
+    {   
+        "id" : 11,
+        "title" : "Mobile Apps",
+        "desc" : "  ",
+        "preview" : "images/preview/cpc11-preview.png",
+        "uri" : "cpc11.html"
+    },
+    {   
+        "id" : 12,
+        "title" : "Mobile Apps",
+        "desc" : "  ",
+        "preview" : "images/preview/cpc12-preview.png",
+        "uri" : "cpc12.html"
+    }
+    ],
+    "comingsoon_color":[
+        {   
+            "id" : 1,
+            "title" : "Turquoise",
+            "desc" : " -bg-color -turquoise ",
+            "preview" : "images/preview/cc01-preview.png",
+            "uri" : "cc01.html"
+        },
+        {   
+            "id" : 2,
+            "title" : " Emerald ",
+            "desc" : "  -bg-color -emerald ",
+            "preview" : "images/preview/cc02-preview.png",
+            "uri" : "cc02.html"
+        },
+        {   
+            "id" : 3,
+            "title" : " Greensea",
+            "desc" : " -bg-color -greensea ",
+            "preview" : "images/preview/cc03-preview.png",
+            "uri" : "cc03.html"
+        },
+        {   
+            "id" : 4,
+            "title" : " Nephritis ",
+            "desc" : " -bg-color -nephritis ",
+            "preview" : "images/preview/cc04-preview.png",
+            "uri" : "cc04.html"
+        },
+        {   
+            "id" : 5,
+            "title" : "Peter River ",
+            "desc" : " -bg-color -peterriver ",
+            "preview" : "images/preview/cc05-preview.png",
+            "uri" : "cc05.html"
+        },
+        {   
+            "id" : 6,
+            "title" : "Belize Hole ",
+            "desc" : " -bg-color -belizehole ",
+            "preview" : "images/preview/cc06-preview.png",
+            "uri" : "cc06.html"
+        },
+        {   
+            "id" : 7,
+            "title" : "Amethyst",
+            "desc" : " -bg-color -amethyst ",
+            "preview" : "images/preview/cc07-preview.png",
+            "uri" : "cc07.html"
+        },
+        {   
+            "id" : 8,
+            "title" : "Wisteria",
+            "desc" : " -bg-color -wisteria ",
+            "preview" : "images/preview/cc08-preview.png",
+            "uri" : "cc08.html"
+        },
+        {   
+            "id" : 9,
+            "title" : "Wetasphalt",
+            "desc" : " -bg-color -wetasphalt ",
+            "preview" : "images/preview/cc09-preview.png",
+            "uri" : "cc09.html"
+        },
+        {   
+            "id" : 10,
+            "title" : "Midnight Blue",
+            "desc" : " -bg-color -midnightblue ",
+            "preview" : "images/preview/cc10-preview.png",
+            "uri" : "cc10.html"
+        },
+        {   
+            "id" : 11,
+            "title" : "Sun Flower",
+            "desc" : " -bg-color -sunflower ",
+            "preview" : "images/preview/cc11-preview.png",
+            "uri" : "cc11.html"
+        },
+        {   
+            "id" : 12,
+            "title" : "Orange",
+            "desc" : " -bg-color -orange ",
+            "preview" : "images/preview/cc12-preview.png",
+            "uri" : "cc12.html"
+        },
+        {   
+            "id" : 13,
+            "title" : "Carrot",
+            "desc" : " -bg-color -carrot ",
+            "preview" : "images/preview/cc13-preview.png",
+            "uri" : "cc13.html"
+        },
+        {   
+            "id" : 14,
+            "title" : "Pumpkin",
+            "desc" : " -bg-color -pumpkin ",
+            "preview" : "images/preview/cc14-preview.png",
+            "uri" : "cc14.html"
+        },
+        {   
+            "id" : 15,
+            "title" : "Alizarin",
+            "desc" : " -bg-color -alizarin ",
+            "preview" : "images/preview/cc15-preview.png",
+            "uri" : "cc15.html"
+        },
+        {   
+            "id" : 16,
+            "title" : "Pomegranate",
+            "desc" : " -bg-color -pomegranate ",
+            "preview" : "images/preview/cc16-preview.png",
+            "uri" : "cc16.html"
+        },
+        {   
+            "id" : 17,
+            "title" : "Concrete",
+            "desc" : " -bg-color -concrete ",
+            "preview" : "images/preview/cc17-preview.png",
+            "uri" : "cc17.html"
+        },
+        {   
+            "id" : 18,
+            "title" : "Asbestos",
+            "desc" : " -bg-color -asbestos ",
+            "preview" : "images/preview/cc18-preview.png",
+            "uri" : "cc18.html"
+        }
+    ],
+    "comingsoon_pattern":[
+        {   
+            "id" : 1,
+            "title" : "Pattern 01",
+            "desc" : " ",
+            "preview" : "images/preview/cp01-preview.png",
+            "uri" : "cp01.html"
+        },
+        {   
+            "id" : 2,
+            "title" : "Pattern 02 ",
+            "desc" : " ",
+            "preview" : "images/preview/cp02-preview.png",
+            "uri" : "cp02.html"
+        },
+        {   
+            "id" : 3,
+            "title" : "Pattern 03 ",
+            "desc" : " ",
+            "preview" : "images/preview/cp03-preview.png",
+            "uri" : "cp03.html"
+        },
+        {   
+            "id" : 4,
+            "title" : "Pattern 04",
+            "desc" : "",
+            "preview" : "images/preview/cp04-preview.png",
+            "uri" : "cp04.html"
+        },
+        {   
+            "id" : 5,
+            "title" : "Pattern 05",
+            "desc" : " ",
+            "preview" : "images/preview/cp05-preview.png",
+            "uri" : "cp05.html"
+        },
+        {   
+            "id" : 6,
+            "title" : "Pattern 06",
+            "desc" : " ",
+            "preview" : "images/preview/cp06-preview.png",
+            "uri" : "cp06.html"
+        },
+        {   
+            "id" : 7,
+            "title" : "Pattern 07",
+            "desc" : "",
+            "preview" : "images/preview/cp07-preview.png",
+            "uri" : "cp07.html"
+        },
+        {   
+            "id" : 8,
+            "title" : "Pattern 08",
+            "desc" : "  ",
+            "preview" : "images/preview/cp08-preview.png",
+            "uri" : "cp08.html"
+        },
+        {   
+            "id" : 9,
+            "title" : "Pattern 09",
+            "desc" : "",
+            "preview" : "images/preview/cp09-preview.png",
+            "uri" : "cp09.html"
+        }
+    ],
+    "comingsoon_gradient":[
+        {   
+            "id" : 1,
+            "title" : "Gradient Orange",
+            "desc" : " -bg-gradient -orange",
+            "preview" : "images/preview/cg01-preview.png",
+            "uri" : "cg01.html"
+        },
+        {   
+            "id" : 2,
+            "title" : "Gradient Svivid",
+            "desc" : " -bg-gradient -svivid",
+            "preview" : "images/preview/cg02-preview.png",
+            "uri" : "cg02.html"
+        },
+        {   
+            "id" : 3,
+            "title" : "Gradient Slight",
+            "desc" : " -bg-gradient -slight",
+            "preview" : "images/preview/cg03-preview.png",
+            "uri" : "cg03.html"
+        },
+        {   
+            "id" : 4,
+            "title" : "Gradient Relaxred",
+            "desc" : " -bg-gradient -relaxred",
+            "preview" : "images/preview/cg04-preview.png",
+            "uri" : "cg04.html"
+        },
+        {   
+            "id" : 5,
+            "title" : "Gradient Summer",
+            "desc" : " -bg-gradient -summer",
+            "preview" : "images/preview/cg05-preview.png",
+            "uri" : "cg05.html"
+        },
+        {   
+            "id" : 6,
+            "title" : "Gradient Animation",
+            "desc" : " -bg-gradient -vividanime",
+            "preview" : "images/preview/cg06-preview.png",
+            "uri" : "cg06.html"
+        },
+        {   
+            "id" : 7,
+            "title" : "Gradient Wedding Day",
+            "desc" : " -bg-gradient -weddingday",
+            "preview" : "images/preview/cg07-preview.png",
+            "uri" : "cg07.html"
+        }
+    ],
+    "comingsoon":[
+    {   
+        "id" : 1,
+        "title" : "The Basic ",
+        "desc" : " Static Background ",
+        "preview" : "images/preview/01-preview.png",
+        "uri" : "comingsoon-01.html"
+    },
+    {   
+        "id" : 2,
+        "title" : "The Basic ",
+        "desc" : "short description ",
+        "preview" : "images/preview/02-preview.png",
+        "uri" : "comingsoon-02.html"
+    },
+    {   
+        "id" : 3,
+        "title" : "The Basic ",
+        "desc" : "short description ",
+        "preview" : "images/preview/03-preview.png",
+        "uri" : "comingsoon-03.html"
+    },
+    {   
+        "id" : 4,
+        "title" : "The Basic ",
+        "desc" : "short description ",
+        "preview" : "images/preview/04-preview.png",
+        "uri" : "comingsoon-04.html"
+    },
+    {   
+        "id" : 5,
+        "title" : "The Basic ",
+        "desc" : "short description ",
+        "preview" : "images/preview/05-preview.png",
+        "uri" : "comingsoon-05.html"
+    },
+    {   
+        "id" : 6,
+        "title" : "The Basic ",
+        "desc" : "short description ",
+        "preview" : "images/preview/06-preview.png",
+        "uri" : "comingsoon-06.html"
+    },
+    {   
+        "id" : 7,
+        "title" : "The Basic ",
+        "desc" : "short description ",
+        "preview" : "images/preview/07-preview.png",
+        "uri" : "comingsoon-07.html"
+    },
+    {   
+        "id" : 8,
+        "title" : "The Basic ",
+        "desc" : "short description ",
+        "preview" : "images/preview/08-preview.png",
+        "uri" : "comingsoon-08.html"
+    },
+    {   
+        "id" : 9,
+        "title" : "The Basic ",
+        "desc" : "short description ",
+        "preview" : "images/preview/09-preview.png",
+        "uri" : "comingsoon-09.html"
+    },
+    {   
+        "id" : 10,
+        "title" : "The Basic ",
+        "desc" : "short description ",
+        "preview" : "images/preview/10-preview.png",
+        "uri" : "comingsoon-10.html"
+    },
+    {   
+        "id" : 11,
+        "title" : "The Basic ",
+        "desc" : "short description ",
+        "preview" : "images/preview/11-preview.png",
+        "uri" : "comingsoon-11.html"
+    },
+    {   
+        "id" : 12,
+        "title" : "The Basic ",
+        "desc" : "short description ",
+        "preview" : "images/preview/12-preview.png",
+        "uri" : "comingsoon-12.html"
+    },
+    {   
+        "id" : 13,
+        "title" : "The Basic ",
+        "desc" : "short description ",
+        "preview" : "images/preview/13-preview.png",
+        "uri" : "comingsoon-13.html"
+    },
+    {   
+        "id" : 14,
+        "title" : "The Basic ",
+        "desc" : "short description ",
+        "preview" : "images/preview/14-preview.png",
+        "uri" : "comingsoon-14.html"
+    },
+    {   
+        "id" : 15,
+        "title" : "The Basic ",
+        "desc" : "short description ",
+        "preview" : "images/preview/15-preview.png",
+        "uri" : "comingsoon-15.html"
+    },
+    {   
+        "id" : 16,
+        "title" : "The Basic ",
+        "desc" : "short description ",
+        "preview" : "images/preview/16-preview.png",
+        "uri" : "comingsoon-16.html"
+    },
+    {   
+        "id" : 17,
+        "title" : "The Basic ",
+        "desc" : "short description ",
+        "preview" : "images/preview/17-preview.png",
+        "uri" : "comingsoon-17.html"
+    },
+    {   
+        "id" : 18,
+        "title" : "The Basic ",
+        "desc" : "short description ",
+        "preview" : "images/preview/18-preview.png",
+        "uri" : "comingsoon-18.html"
+    },
+    {   
+        "id" : 19,
+        "title" : "The Basic ",
+        "desc" : "short description ",
+        "preview" : "images/preview/19-preview.png",
+        "uri" : "comingsoon-19.html"
+    },
+    {   
+        "id" : 20,
+        "title" : "The Basic ",
+        "desc" : "short description ",
+        "preview" : "images/preview/20-preview.png",
+        "uri" : "comingsoon-20.html"
+    }
+    ]
+}

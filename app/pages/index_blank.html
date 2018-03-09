@@ -1,0 +1,56 @@
+<!-- frame/builder.nunjucks -->
+{% set page_title = 'Ostronot Creator' %} 
+{% set body_class = '' %} <!-- fixed-menu --> 
+{% set header_class = '' %} 
+{% set builder = false %} 
+
+{% extends "frame/builder.nunjucks" %} 
+{% block content %}
+<!-- start your code -->
+<div id="airblock-wrapper">
+    <div class="airblock_header">
+        <div class="airblock_header-left">
+            <ul>
+                <li><span class="os-home link-icon"></span></li>
+                <li>Page: Unlimited</li>
+            </ul>
+        </div>
+        <div class="airblock_header-center">
+            Polarapps Deck Project <span>(edit)</span>
+        </div>
+        <div class="airblock_header-right">
+            <ul>
+                <li data-toggle="tooltip" data-placement="bottom" title="Search"><span class="os-search link-icon"></span></li>
+                <li data-toggle="tooltip" data-placement="bottom" title="Save"><span class="os-save link-icon"></span></li>
+                <li data-toggle="tooltip" data-placement="bottom" title="Delete"><span class="os-delete link-icon"></span></li>
+                <li data-toggle="tooltip" data-placement="bottom" title="More"><span class="os-more link-icon"></span></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="airblock_editor">
+        <div id="welcome">
+            <h1>Welcome to the studio</h1>
+            <p>Design from blank space or use ready-made layout</p>
+        </div>
+        
+        <div id="airblock">
+            
+        </div> <!-- /#myGrid -->
+    </div>
+
+    <div id="airblock_dock">
+        <a href=""  data-toggle="tooltip" data-placement="top" title="Duplicate"><span class="os-duplicate link-icon"></span></a>
+        <a href=""  data-toggle="tooltip" data-placement="top" title="Block"><span class="os-block link-icon"></span></a>
+        <a href=""  data-toggle="tooltip" data-placement="top" title="Images"><span class="os-images link-icon"></span></a>
+        <a href=""  data-toggle="tooltip" data-placement="top" title="Library"><span class="os-archive link-icon"></span></a>
+        <a href=""  data-toggle="tooltip" data-placement="top" title="Theme"><span class="os-color link-icon"><span class="path1"></span><span class="path2"></span><span class="path3"></span></span></a>
+        <a href=""  data-toggle="tooltip" data-placement="top" title="Help"><span class="os-help link-icon"></span></a>
+    </div>
+</div>
+
+
+
+
+<!-- end your code -->
+{% endblock %}

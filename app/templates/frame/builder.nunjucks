@@ -1,0 +1,64 @@
+<!-- frame/builder.nunjucks -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <title>{{ page_title }}</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- CSS dependencies -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    {# <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" /> #}
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" />
+    <!-- build:css assets/css/assets.css -->
+     <link rel="stylesheet" type="text/css" href="css/airblock.css" />
+    <link rel="stylesheet" type="text/css" href="css/grideditor.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <!-- endbuild -->
+</head>
+<body>
+
+<!-- You write code for this content block in another file -->
+{% block content %} 
+
+{% endblock %}
+
+{# <script src="bower_components/jquery/dist/jquery.js"></script>  #}
+
+<script src="assets/libs/jquery-1.11.2.js"></script>
+<script src="assets/libs/jquery-ui.js"></script>
+<script src="assets/libs/tinymce/tinymce.min.js"></script>
+<script src="assets/libs/tinymce/jquery.tinymce.min.js"></script>
+<!-- build:js js/combined.js -->
+<script src="bower_components/popper.js/dist/umd/popper.min.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="bower_components/jarallax/dist/jarallax.min.js"></script>
+{# <script src="bower_components/swiper/dist/js/swiper.min.js"></script> #}
+<!-- endbuild -->
+<!-- Grid editor javascript -->
+{# <script src="assets/js/jquery.grideditor.js"></script> #}
+<script src="assets/js/jquery.airblock.js"></script>
+
+<script>
+    {% if builder %}
+    $(function() {
+        // Initialize grid editor
+        $('#airblock').airblock({
+            new_row_layouts: [[12], [6,6], [9,3]],
+            //content_types: ['tinymce'],
+        });
+        
+        // Get resulting html
+        var html = $('#airblock').airblock('getHtml');
+        console.log(html);
+       
+        $('[data-toggle="tooltip"]').tooltip()
+    });
+    jarallax(document.querySelectorAll('.jarallax'), {
+        speed: 0.2
+    });
+    {% endif %}
+</script>
+</html>

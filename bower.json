@@ -1,0 +1,26 @@
+{
+  "name": "air-studio",
+  "description": "Air Studio Starter Template",
+  "main": "index.js",
+  "authors": [
+    "dodihidayatullah@gmail.com"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "html"
+  ],
+  "homepage": "dist",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "app/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "parallax.js": "^1.4.2",
+    "slick-carousel": "^1.7.1",
+    "particles.js": "^2.0.0"
+  }
+}

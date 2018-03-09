@@ -1,0 +1,300 @@
+// define var
+$grid-columns: 12;
+$unit: (100%  / $grid-columns) ;
+/* Mixin */ 
+@mixin air-flex-col($col) {
+    -ms-flex: 0 0 ($unit * $col);
+    flex: 0 0 ($unit * $col);
+    max-width: ($unit * $col);
+}
+
+.ge-mainControls {
+    position: relative;
+    min-height: 22px;
+    margin-bottom: 10px;
+    .ge-wrapper {
+        padding-top: 5px;
+        &.ge-top .container {
+            margin: 0;
+            padding: 0;
+            width: auto;
+        }
+        &.ge-fixed {
+            position: fixed;
+            z-index: 20;
+            top: 0;
+        }
+    }
+    .ge-addRowGroup {
+        .btn.btn-primary {
+            background: #f4f4f4;
+            color: #666;
+            border-color: #999;
+        }
+        .ge-row-icon {
+            display: inline-block;
+            width: 48px;
+            margin: 0;
+            .column {
+                height: 10px;
+                background: #666;
+                padding: 0;
+                border-left: 2px solid #f4f4f4;
+            }
+        }
+    }
+    .ge-layout-mode {
+        margin-left: 5px;
+    }
+    .btn:focus {
+        box-shadow: none;
+        outline: none;
+    }
+}
+
+.ge-html-output {
+    width: 100%;
+    display: none;
+}
+
+
+/* Not editing */
+
+.ge-canvas {
+    transition: all 0.3s;
+    .ge-tools-drawer {
+        display: none;
+    }
+    &.ge-editing {
+        /* Content area */
+        /* Sorting */
+        .ge-tools-drawer {
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            background: blue;
+            margin: 0 -5px 5px;
+            display: block;
+            >a {
+                display: inline-block;
+                padding: 5px;
+                &:hover {
+                    background: rgba(255, 255, 255, 0.5);
+                    cursor: pointer;
+                }
+            }
+            .ge-details {
+                padding: 5px;
+                border-top: 1px solid rgba(0, 0, 0, 0.05);
+                display: none;
+                .btn-group a {
+                    color: #333;
+                    &:hover {
+                        text-decoration: none;
+                        cursor: pointer;
+                    }
+                }
+                input.ge-id {
+                    border: 1px solid #7F7F7F;
+                    border-radius: 4px;
+                    font-size: 11px;
+                    padding: 2px 5px;
+                    margin-right: 5px;
+                    width: 80px;
+                }
+            }
+        }
+        .row {
+            background-color: #efefef;
+            border: 1px solid #999999;
+            padding: 0 5px 5px;
+            margin-bottom: 5px;
+            //margin-left: 0;
+            //margin-right: 0;
+            >.ge-tools-drawer {
+                background: #e5e5e5;
+                >a {
+                    color: #666;
+                    &.ge-add-column {
+                        color: #178acc;
+                    }
+                }
+            }
+        }
+        .column {
+            background-color: rgba(47, 164, 231, 0.15);
+            border: 1px solid #2FA4E7;
+            padding: 0 5px 5px;
+            >.ge-tools-drawer {
+                background: #afd5ea;
+                a {
+                    color: #178acc;
+                }
+                >a.ge-add-row {
+                    color: #666;
+                }
+            }
+        }
+        .ge-content-type-tinymce.active {
+            outline: 1px dotted #333;
+        }
+        .ui-sortable-placeholder {
+            background: rgba(255, 255, 0, 0.2);
+            visibility: visible !important;
+            min-height: 50px;
+        }
+    }
+    &.ge-layout-phone {
+        transition: all 0.3s;
+        max-width: 450px;
+        margin-left: auto;
+        margin-right: auto;
+        .col-sm-1,
+        .col-md-1,
+        .col-lg-1,
+        .col-sm-2,
+        .col-md-2,
+        .col-lg-2,
+        .col-sm-3,
+        .col-md-3,
+        .col-lg-3,
+        .col-sm-4,
+        .col-md-4,
+        .col-lg-4,
+        .col-sm-5,
+        .col-md-5,
+        .col-lg-5,
+        .col-sm-6,
+        .col-md-6,
+        .col-lg-6,
+        .col-sm-7,
+        .col-md-7,
+        .col-lg-7,
+        .col-sm-8,
+        .col-md-8,
+        .col-lg-8,
+        .col-sm-9,
+        .col-md-9,
+        .col-lg-9,
+        .col-sm-10,
+        .col-md-10,
+        .col-lg-10,
+        .col-sm-11,
+        .col-md-11,
+        .col-lg-11,
+        .col-sm-12,
+        .col-md-12,
+        .col-lg-12 {
+            width: inherit;
+        }
+
+        @for $i from 1 to 13 {
+            .col-xs-#{$i} {
+                @include air-flex-col($i);
+            }
+        }
+    }
+    &.ge-layout-tablet {
+        transition: all 0.3s;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+        .col-xs-1,
+        .col-md-1,
+        .col-lg-1,
+        .col-xs-2,
+        .col-md-2,
+        .col-lg-2,
+        .col-xs-3,
+        .col-md-3,
+        .col-lg-3,
+        .col-xs-4,
+        .col-md-4,
+        .col-lg-4,
+        .col-xs-5,
+        .col-md-5,
+        .col-lg-5,
+        .col-xs-6,
+        .col-md-6,
+        .col-lg-6,
+        .col-xs-7,
+        .col-md-7,
+        .col-lg-7,
+        .col-xs-8,
+        .col-md-8,
+        .col-lg-8,
+        .col-xs-9,
+        .col-md-9,
+        .col-lg-9,
+        .col-xs-10,
+        .col-md-10,
+        .col-lg-10,
+        .col-xs-11,
+        .col-md-11,
+        .col-lg-11,
+        .col-xs-12,
+        .col-md-12,
+        .col-lg-12 {
+            width: inherit;
+        }
+        @for $i from 1 to 13 {
+            .col-sm-#{$i} {
+                @include air-flex-col($i);
+            }
+        }
+    }
+    &.ge-layout-desktop {
+        transition: all 0.3s;
+        max-width: none;
+        margin-left: auto;
+        margin-right: auto;
+        .col-xs-1,
+        .col-sm-1,
+        .col-lg-1,
+        .col-xs-2,
+        .col-sm-2,
+        .col-lg-2,
+        .col-xs-3,
+        .col-sm-3,
+        .col-lg-3,
+        .col-xs-4,
+        .col-sm-4,
+        .col-lg-4,
+        .col-xs-5,
+        .col-sm-5,
+        .col-lg-5,
+        .col-xs-6,
+        .col-sm-6,
+        .col-lg-6,
+        .col-xs-7,
+        .col-sm-7,
+        .col-lg-7,
+        .col-xs-8,
+        .col-sm-8,
+        .col-lg-8,
+        .col-xs-9,
+        .col-sm-9,
+        .col-lg-9,
+        .col-xs-10,
+        .col-sm-10,
+        .col-lg-10,
+        .col-xs-11,
+        .col-sm-11,
+        .col-lg-11,
+        .col-xs-12,
+        .col-sm-12,
+        .col-lg-12 {
+            width: inherit;
+        }
+        @for $i from 1 to 13 {
+            .col-md-#{$i} {
+                @include air-flex-col($i);
+            }
+        }
+    }
+}
+
+
+/* While editing */

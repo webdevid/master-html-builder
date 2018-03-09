@@ -1,0 +1,965 @@
+/*!
+Theme Name: Blibli-Faq
+Theme URI: http://underscores.me/
+Author: info@langitstudio.com
+Author URI: https://www.langitstudio.com
+Description: Blibli FAQ - Microsite
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: blibli-faq
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+Blibli-Faq is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Normalize
+# Typography
+# Elements
+# Forms
+# Navigation
+	## Links
+	## Menus
+# Accessibility
+# Alignments
+# Clearings
+# Widgets
+# Content
+	## Posts and pages
+	## Comments
+# Infinite scroll
+# Media
+	## Captions
+	## Galleries
+--------------------------------------------------------------*/
+
+@font-face {
+    font-family: 'Winter Calligraphy';
+    src: url('../fonts/WinterCalligraphy.eot');
+    src: url('../fonts/WinterCalligraphy.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/WinterCalligraphy.woff2') format('woff2'),
+        url('../fonts/WinterCalligraphy.woff') format('woff'),
+        url('../fonts/WinterCalligraphy.ttf') format('truetype'),
+        url('../fonts/WinterCalligraphy.svg#WinterCalligraphy') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@import "designblock-base/froala_blocks";
+// layout
+@import "designblock-base/_layout.scss";
+@import "designblock-base/_navigation.scss";
+@import "designblock-base/_typography.scss";
+@import "designblock-base/_wp_style.scss";
+
+body{
+	background-color:$bg-header; 
+}
+body.fixed-menu{
+	padding-top:60px;
+}
+
+// heading style
+.font-two{
+	font-family: $font-secondary;
+}
+.text-color-primary{
+	color:$link-color-active;
+}
+.text-color-secondary{
+	color:$link-color;
+}
+.text-couple{
+	color:$link-color;
+	font-size:18px;
+	letter-spacing: 5px;
+}
+
+
+.btn-wedding.btn.btn-empty {
+    border-color: #ae6835;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #ae6835;
+}
+.btn-wedding.btn.btn-empty:hover {
+    background-color: #ae6835;
+	color: #FFFFFF;
+	border-color: #ae6835;
+}
+// header
+.navbar-brand{
+	padding:15px 0px;
+	img{
+		height:30px;
+	}
+}
+
+// swiper - slider
+.hero-carousel{
+	padding:5px 0px;
+}
+.swiper-container {
+	width: 100%;
+	height: 100%;
+}
+.swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	background: #fff;
+	/* Center slide text vertically */
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+}
+
+// hero slide 
+.hero-badge{
+	&_wrapper{
+		height:100%;
+		width:100%;
+		position: absolute;
+		top:0;
+		left:0;
+		z-index:10;
+		background: rgba(0,0,0,0.5);
+
+		&::before{
+			content: '';
+			background-image: url(../images/wedding/el-center.png);
+			background-repeat: no-repeat;
+			height: 240px;
+			width: 260px;
+			position: absolute;
+			text-align: center;
+			z-index: -1;
+			margin-left: auto !important;
+			margin-right: auto !important;
+			left: 0;
+			right: 0;
+		}
+	}
+	&_inner{
+		position: relative;
+		&::before{
+			content: '';
+			position: absolute;
+			background-image: url(../images/wedding/el-left.png);
+			background-repeat: no-repeat;
+			height: 140px;
+			width: 95px;
+			top: 15%;
+			left: -75px;
+
+		}
+		&::after{
+			content: '';
+			position: absolute;
+			background-image: url(../images/wedding/el-right.png);
+			background-repeat: no-repeat;
+			height: 140px;
+			width: 95px;
+			top: 15%;
+			right: -95px;
+		}
+		h3{
+			color:$white;
+			font-family: $font-secondary;
+			font-size: 36px;
+			font-weight: normal;
+		}
+		h4{
+			color:$white;
+			font-size: 15px;
+			text-transform: uppercase;
+			letter-spacing: 3px;
+		}
+		h1{
+			color:$white;	
+			font-family: 'Winter Calligraphy';
+			font-size: 95px;
+			line-height: 1em;
+			margin: 0px;
+			padding: 0px;
+		}
+	}
+}
+
+// tab-profile
+.tab-profile{
+	.nav{
+		.nav-item{
+			min-width:300px;
+			position:relative;
+			&::after{
+				content:'';
+				position:absolute;
+				height:60px;
+				width:1px;
+				background:$link-color;
+				bottom:26px;
+				right:0;
+			}
+			&:last-child::after{
+				background: none;
+			}
+			.nav-tab{
+				cursor:pointer;
+				text-decoration: none;
+				padding:15px;
+
+				&-title{
+					margin-top:30px;
+					font-size:18px;
+					color:$link-color-active;
+					letter-spacing: 3px;
+					font-weight: 400;
+				}
+				&-subtitle{
+					color:$link-color;
+					font-size:12px;
+				}
+			}
+		}
+		
+	}
+	.tab-content{
+		margin-top:60px;
+		h3{
+			font-weight:400;
+			color:$link-color-active;
+			font-size:24px;
+			letter-spacing: 2px;
+			margin-bottom:20px;
+			small{
+				font-size:18px;
+				color:$link-color;
+			}
+		}
+		.tab-pane_content{
+			padding-top:30px;
+		}
+		p{
+			font-size:14px;
+			line-height: 24px;
+		}
+	}
+
+	&_nav-icon{
+		content:'';
+		position:relative;
+		height:85px;
+		width:85px;
+		background-image: url('../images/wedding/tab-nav.svg');
+		background-size: 85px;
+		background-repeat: no-repeat;
+		margin: 0 auto;
+	}
+	.nav-tab.active .tab-profile_nav-icon{
+		background-image: url('../images/wedding/tab-nav-active.svg');
+	}	
+}
+
+// tab bride & Groom
+.tab-friend{
+	.nav{
+		background-color:$bg-header;
+		padding:15px 30px;
+		&::before{
+			content: '';
+			width: 150px;
+			height: 1px;
+			background: $link-color;
+			left: -165px;
+			position: absolute;
+			top: 50%;
+			opacity: 0.3;
+		}
+		&::after{
+			content:'';
+			right:-165px;
+			width: 150px;
+			height:1px;
+			background: $link-color;
+			position: absolute;
+			top: 50%;
+			opacity: 0.3;
+		}
+		.nav-item{
+			padding:0px 15px;
+			position: relative;
+			&::after{
+				content:'';
+				width:1px;
+				height:15px;
+				position: absolute;
+				bottom:15px;
+				right: 0;
+				background-color: #ddd;
+			}
+			&:last-child::after{
+				background-color: transparent;
+			}
+				
+			.nav-tab{
+				cursor: pointer;
+				text-decoration: none;
+				padding: 15px 0px;
+				margin-top: 30px;
+				font-size: 18px;
+				color: $link-color;
+				line-height: 40px;
+				letter-spacing: 3px;
+				font-weight: 400;
+
+				&.active{
+					color: $link-color-active;
+				}
+			}
+		}
+		
+	}
+	.card{
+		border:0px;
+		border-radius:0px;
+		background: transparent;
+
+		.card-title{
+			color:$link-color-active;
+			text-transform: uppercase;
+			margin-bottom:0px;
+			font-size:1em;
+		}
+		.card-text{
+			text-transform: uppercase;
+			color:$link-color;
+			font-size:0.8em;
+			letter-spacing: 2px;
+		}
+	}
+
+	.card-image{
+		position:relative;
+		&::before{
+			content:'';
+			position: absolute;
+			width:90%;
+			height:90%;
+			border:1px solid $link-color-active;
+			left:5%;
+			top:5%;
+		}
+	}
+}
+
+/*-------------------
+countdown timer
+--------------------*/
+#countdown {
+	margin-bottom: 0px;
+	overflow: hidden;
+	text-align: center;
+	z-index: 100;
+	.countdown_timer {
+		margin-left: 0px;
+		padding-left: 0px;
+		li {
+			list-style: none;
+			float: left;
+			padding: 15px;
+			&:first-child {
+				padding-left: 0px;
+			}
+			span {
+				display: block;
+			}
+			span.time {
+				font-size: 3.5em;
+				font-weight: 300;
+				line-height: 1em;
+				color: $link-color-active;
+			}
+			span.meta {
+				text-transform: uppercase;
+				color: $link-color;
+				font-weight: normal;
+			}
+		}
+	}
+	.shape-countdown{
+		background:$white;
+		padding:80px 30px;
+		position:relative;
+
+		&::before{
+			content:'';
+			position:absolute;
+			width:90%;
+			height:90%;
+			border:1px solid $link-color-active;
+			left:5%;
+			top:5%;
+		}
+	}
+}
+#countdown.-center {
+	.countdown_timer {
+		display: inline-block;
+		margin: 0;
+		padding: 0;
+		zoom: 1;
+		*display: inline;
+		li {
+			&:first-child {
+				padding-left: 15px;
+			}
+		}
+	}
+}
+
+
+// rsvp
+.rsvp{
+	&-wrapper{
+		background-size: cover;
+		padding:60px;
+		min-height: 500px;
+		position: relative;
+
+		&::before{
+			content:'';
+			position:absolute;
+			width:calc(100% - 120px);
+			height:calc(100% - 120px);
+			border:1px solid $link-color-active;
+			left:60px;
+			top:60px;
+		}
+	}
+
+	&-inner{
+		background:#fbfbfb;
+		margin:60px 60px 10px 60px;
+		overflow: hidden;
+		position: relative;
+
+		.media img{
+			max-width:30px;
+		}
+	}
+
+	&-card{
+		width:50%;
+		padding:50px 40px 50px 40px;
+		position: relative;
+
+		&:first-child::before{
+			content:'';
+			width:1px;
+			height:100%;
+			position: absolute;
+			right:0;
+			top:0;
+			background-color: $link-color;
+		}
+
+	}
+
+	&-badge{
+		position:absolute;
+		right:60px;
+		top:-1px;
+		width:70px;
+		height:115px;
+		text-align: center;
+		padding-top:70px;
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#edf1e6+100,edf1e6+100&1+80,0+100 */
+		background: -moz-linear-gradient(left,  rgba(237,241,230,1) 80%, rgba(237,241,230,0) 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(left,  rgba(237,241,230,1) 80%,rgba(237,241,230,0) 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to right,  rgba(237,241,230,1) 80%,rgba(237,241,230,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#edf1e6', endColorstr='#00edf1e6',GradientType=1 ); /* IE6-9 */
+
+		img{
+			max-width: 30px;
+		}
+	}
+
+	&-form{
+		overflow: hidden;
+		position: relative;
+		margin:10px 60px 60px 60px;
+		position: relative;
+		background: $link-color-active;
+		padding:30px;
+
+		.btn-rsvp{
+			background-color: #d1bca5;
+			border:0px;
+			text-transform: uppercase;
+			font-size:14px;
+			cursor: pointer;
+		}
+	}
+}
+
+// blog carousel
+.blog-carousel{
+	.swiper-slide{
+		position: relative;
+		cursor: pointer;
+		.thumb::after{
+			content:'';
+			position:absolute;
+			width:calc(100% - 30px);
+			height:calc(100% - 30px);
+			border:2px solid $link-color-active;
+			left:15px;
+			top:15px;
+		}
+		.overlay{
+			position: absolute;
+			width:calc(100% - 60px);
+			height:calc(100% - 60px);
+			left:0px;
+			top:0px;
+			padding:30px;
+			opacity: 0;
+			background-color:$bg-header;
+			text-align: left;
+
+			&-meta{
+				font-family: $font-secondary;
+				color:$link-color;
+				font-size:18px;
+			}
+			&-title{
+				color:$link-color-active;
+				font-size:18px;
+				line-height: 1.5em;
+				margin-bottom:15px;
+			}
+			&-content{
+				font-size:13px;
+				line-height: 1.6em;
+				margin-bottom:30px;
+			}
+			.btn{
+				border-color:$link-color-active;
+				font-size:13px;
+				text-transform: uppercase;
+				color:$link-color-active;
+
+				&:hover{
+					background-color:$link-color-active;
+					color:$white; 
+				}
+			}
+		}
+
+		&:hover > .overlay,
+		&.active > .overlay{
+			opacity: 1;
+		}
+	}
+}
+
+// slide gallery
+.gallery-carousel{
+
+	.swiper-container{
+		overflow-y: auto;
+		padding-bottom:60px;
+	}
+	
+	.swiper-slide{
+		position: relative;
+		cursor: pointer;
+
+		&.swiper-slide-active{
+			.thumb{
+				img{
+					-webkit-filter: grayscale(0%);
+					filter: grayscale(0%);
+					filter: none;
+				}
+			}
+		}
+		.thumb::after{
+			content:'';
+			position:absolute;
+			width:calc(100% - 30px);
+			height:calc(100% - 30px);
+			border:0px solid $link-color-active;
+			left:15px;
+			top:15px;
+
+			
+		}
+		.thumb{
+			img{
+				-webkit-filter: grayscale(100%);
+				filter: grayscale(100%);
+				filter: gray;
+			}
+		}
+
+		.overlay{
+			position: absolute;
+			width:calc(100% - 60px);
+			height:calc(100% - 60px);
+			left:0px;
+			top:0px;
+			padding:30px;
+			text-align: center;
+		}
+
+		.gallery-caption{
+			background:$white;
+			text-align:center;
+			font-size:14px;
+			font-weight: 400;
+			letter-spacing: 2px;
+			padding:5px 10px;
+			color:$link-color;
+
+			span{
+				color:$link-color-active;
+			}
+		}
+	}
+
+	.gallery-slide-pagination{
+		bottom:0;
+		.swiper-pagination-bullet {
+			width: 80px;
+			height: 3px;
+			display: inline-block;
+			border-radius: 0px;
+			background: #000;
+			opacity: .2;
+		}
+		.swiper-pagination-bullet-active{
+			background:$link-color-active; 
+			opacity: 1;
+		}
+	}
+}
+.gallery-slide-container .swiper-slide{
+    width: 50% !important;
+}
+
+// header section
+.header-block{
+	.header-block-meta{
+		font-family: $font-secondary;
+		color:$link-color;
+		font-size:30px;
+	}
+	.header-block-title{
+		color:$link-color-active;
+		font-size:24px;
+		line-height: 1.5em;
+		margin-bottom:15px;
+	}
+	
+}
+
+// section map
+#gmap {
+	width: 100%;
+	height: 350px;
+	position: relative;
+	border:2px solid $link-color-active;
+}
+.map-footer{
+	margin-top:-300px;position:relative;z-index:0;
+	&_content{
+		min-height:200px;
+		padding-top: 150px;
+	}
+}
+
+// slide blog
+.swiper-pagination-bullet-active {
+	background: $link-color-active;
+}
+
+
+/**  single page **/
+#single-header{
+	background-color: $link-color-active;
+	color:$white;
+
+	h2{
+		color:$white;
+		padding:0;
+		margin:0;
+	}
+}
+
+// responsive breakpoint
+@media (max-width: 575px) { 
+
+	.air-block{
+		padding:60px 0px;
+	}
+
+	.navbar-brand{
+		padding:15px 0px;
+		img{
+			height:30px;
+		}
+	}
+
+	.navbar{
+		.btn-wedding{
+			margin-bottom:30px;
+			width: 100%;
+		}
+	}
+
+	// hero
+	.hero-badge_inner h3{
+		font-size: 20px;
+	}
+	.hero-badge_inner h1{
+		font-size:45px;
+	}
+	.hero-badge_inner h4{
+		font-size:5px;
+	}
+	.hero-badge_inner::before {
+		top: 5%;
+		left: -40px;
+		background-size: 70px;
+	}
+	.hero-badge_inner::after {
+		top: 1%;
+		right: -75px;
+		background-size: 50px;
+	}
+
+	// countdown
+	#countdown{
+		background: rgba(0,0,0,0.5);
+		.shape-countdown{
+			padding: 50px 10px;
+			background: transparent;
+			&::before{
+				border:0px;
+			}
+		}
+		.countdown_timer li{
+			padding:0px;
+		}
+	}
+
+	// rsvp
+	.rsvp-wrapper{
+		padding:10px;
+
+		&::before {
+			content: '';
+			position: absolute;
+			width: calc(100% - 20px);
+			height: calc(100% - 20px);
+			border: 0px solid #ae6835;
+			left: 10px;
+			top: 10px;
+		}
+
+		.rsvp-inner{
+			margin: 10px 10px 10px 10px;
+
+			.rsvp-card{
+				width:100%;
+				padding: 50px 30px 50px 30px;
+
+				&:first-child{
+					border-bottom:1px solid $link-color;
+				}
+			}
+			
+		}
+		.rsvp-form{
+			margin: 10px 10px 10px 10px;
+		}
+	}
+
+	// bride & groom
+	.card{
+		max-width: 50%;
+		float: left;
+
+		.card-title{
+			line-height: 1.5em;
+		}
+	}
+	.rsvp-badge{
+		display: none;
+	}
+	.tab-friend .nav .nav-item::after{
+		background: transparent;
+	}
+
+	.font-two{
+		font-size: 25px;
+	}
+	// gallery slide
+	.gallery-slide-container .swiper-slide {
+		width: 100% !important;
+	}
+	.gallery-carousel .swiper-slide .gallery-caption{
+		font-size:10px;
+	}
+	.gallery-carousel .gallery-slide-pagination .swiper-pagination-bullet{
+		width: 50px;
+	}
+	// map footer
+	.map-footer{
+		margin-top:-300px;position:relative;z-index:0;
+		&_content{
+			min-height:200px;
+			padding-top: 210px;
+		}
+	}
+	.tab-profile .nav .nav-item{
+		width:90px;
+		min-width: 90px;
+	}
+	.tab-profile .nav .nav-item .nav-tab-title{
+		font-size:12px;
+	}
+	.tab-profile .nav .nav-item .nav-tab-subtitle{
+		display: none;
+	}
+	.tab-profile .nav .nav-item::after{
+		height: 30px;
+	}
+	.tab-profile_nav-icon{
+		height: 65px;
+		width: 65px;
+		background-size: 65px;
+	}
+	// slide blog
+	.swiper-pagination-bullet-active {
+		background: $link-color-active;
+	}
+}
+
+// Small devices (landscape phones, less than 768px)
+@media  screen and (min-width: 576px) and (max-width: 768px) { 
+	.air-block{
+		padding:60px 0px;
+	}
+
+	.navbar-brand{
+		padding:15px 0px;
+		img{
+			height:30px;
+		}
+	}
+
+	.navbar{
+		.btn-wedding{
+			margin-bottom:30px;
+			width: 100%;
+		}
+	}
+
+	// tab about
+	.tab-profile .nav .nav-item {
+		min-width: 240px;
+	}
+
+	// rsvp
+	.rsvp-wrapper{
+		padding:10px;
+
+		&::before {
+			content: '';
+			position: absolute;
+			width: calc(100% - 20px);
+			height: calc(100% - 20px);
+			border: 0px solid #ae6835;
+			left: 10px;
+			top: 10px;
+		}
+
+		.rsvp-inner{
+			margin: 10px 10px 10px 10px;
+
+			.rsvp-card{
+				width:50%;
+				padding: 50px 30px 50px 30px;
+
+				&:first-child{
+					border-bottom:1px solid $link-color;
+					float:left;
+				}
+				&:last-child{
+					float:right;
+				}
+			}
+			
+		}
+		.rsvp-form{
+			margin: 10px 10px 10px 10px;
+		}
+	}
+
+	// bride & groom
+	.card{
+		max-width: 50%;
+		float: left;
+
+		.card-title{
+			line-height: 1.5em;
+		}
+
+		.card-body{
+			padding:1em;
+		}
+
+		
+	}
+	// map footer
+	.map-footer{
+		margin-top:-300px;position:relative;z-index:0;
+		&_content{
+			min-height:250px;
+			padding-top: 210px;
+		}
+	}
+	
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991px) { 
+
+}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199px) { 
+
+}

@@ -1,0 +1,670 @@
+<!-- frame/builder.nunjucks -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <title>Bootstrap Creator</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- CSS dependencies -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" />
+    <!-- build:css assets/css/assets.css -->
+     <link rel="stylesheet" type="text/css" href="css/airblock.css" />
+    <link rel="stylesheet" type="text/css" href="css/grideditor.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <!-- endbuild -->
+</head>
+<body>
+
+<!-- You write code for this content block in another file -->
+
+<!-- start your code -->
+<div id="airblock-wrapper">
+    <div class="airblock_header_fixed">
+
+        <div class="builder-top">
+            <ul class="menu-builder  float-left">
+
+
+                <li>
+                    <a href="">
+                        <i class="material-icons">person</i>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="material-icons">share</i>
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="menu-builder float-right">
+                <li>
+                    <a href="#" class="gm-edit-mode">
+                        <i class="material-icons">code</i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="gm-preview">
+                        <i class="material-icons">visibility</i>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="material-icons">save</i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="">
+                        <i class="material-icons">cloud_download</i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="builder-left">
+        <ul class="side-menu-builder">
+            <li>
+                <a href="#" class="side_menu-builder_nav" data-id="nav_sections">
+                    <i class="material-icons">layers</i>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="side_menu-builder_nav" data-id="nav_sites">
+                    <i class="material-icons">view_carousel</i>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="side_menu-builder_nav" data-id="nav_settings">
+                    <i class="material-icons">settings</i>
+                </a>
+            </li>
+            
+
+
+        </ul>
+
+        <ul class="side-menu-builder fix-bottom">
+            <li>
+                <a href="#" class="ge-layout-mode" data-layout="2">
+                    <i class="material-icons">phone_iphone</i>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="ge-layout-mode" data-layout="1">
+                    <i class="material-icons">tablet_mac</i>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="ge-layout-mode" data-layout="0">
+                    <i class="material-icons">desktop_mac</i>
+                </a>
+            </li>
+
+            <li>
+                <a href="">
+                    <i class="material-icons">redo</i>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <i class="material-icons">undo</i>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <i class="material-icons">delete_forever</i>
+                </a>
+            </li>
+
+        </ul>
+
+        
+
+
+    </div>
+
+    <div class="builder-option">
+        <div class="option_layer" id="layer_1">
+            <div class="layer_1_close">
+                <div class="layer_1_close-btn">
+                    <i class="material-icons">clear</i>
+                </div>
+            </div>
+            <div class="option_list">
+                <ul class="option">
+                    <li>
+                        <a href="#" class="filter-section" data-group-section="section_item" data-panel-parent="add_section">All Sections</a>
+                    </li>
+                    <li>
+                        <a href="#" class="filter-section" data-group-section="section_panel_2" data-panel-parent="add_section">Headers</a>
+                    </li>
+                    <li>
+                        <a href="#" class="filter-section" data-group-section="section_panel_3" data-panel-parent="add_section">Intros</a>
+                    </li>
+                    <li>
+                        <a href="#" class="filter-section" data-group-section="section_panel_4" data-panel-parent="add_section">Sliders
+                            <span class="label label-success option-new-label">NEW</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="filter-section" data-group-section="section_panel_5" data-panel-parent="add_section">Features</a>
+                    </li>
+                    <li>
+                        <a href="#" class="filter-section" data-group-section="section_panel_6" data-panel-parent="add_section">Titles</a>
+                    </li>
+                    <li>
+                        <a href="#" class="filter-section" data-group-section="section_panel_7" data-panel-parent="add_section">Content</a>
+                    </li>
+                    <li>
+                        <a href="#" class="filter-section" data-group-section="section_panel_8" data-panel-parent="add_section">Videos</a>
+                    </li>
+                    <li>
+                        <a href="#" class="filter-section" data-group-section="section_panel_9" data-panel-parent="add_section">Countdown
+                            <span class="label label-success option-new-label">NEW</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="filter-section" data-group-section="section_panel_10" data-panel-parent="add_section">Forms</a>
+                    </li>
+                    <li>
+                        <a href="#" class="filter-section" data-group-section="section_panel_11" data-panel-parent="add_section">Gallery
+                            <span class="label label-success option-new-label">NEW</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="filter-section" data-group-section="section_panel_12" data-panel-parent="add_section">Testimonials</a>
+                    </li>
+                    <li>
+                        <a href="#" class="filter-section" data-group-section="section_panel_13" data-panel-parent="add_section">Clients</a>
+                    </li>
+                    <li>
+                        <a href="#" class="filter-section" data-group-section="section_panel_14" data-panel-parent="add_section">Call to Action</a>
+                    </li>
+                    <li>
+                        <a href="#" class="filter-section" data-group-section="section_panel_15" data-panel-parent="add_section">Accordions
+                            <span class="label label-success option-new-label">NEW</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="filter-section" data-group-section="section_panel_16" data-panel-parent="add_section">Team</a>
+                    </li>
+                    <li>
+                        <a href="#" class="filter-section" data-group-section="section_panel_17" data-panel-parent="add_section">Pricing Tables</a>
+                    </li>
+                    <li>
+                        <a href="#" class="filter-section" data-group-section="section_panel_18" data-panel-parent="add_section">Social</a>
+                    </li>
+                    <li>
+                        <a href="#" class="filter-section" data-group-section="section_panel_19" data-panel-parent="add_section">FAQ</a>
+                    </li>
+                    <li>
+                        <a href="#" class="filter-section" data-group-section="section_panel_20" data-panel-parent="add_section">Footer</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="section_list">
+                <div class="section_item item_01 section_panel_1" data-section="">
+                    <img src="images/sections/airblock-accordion-video-1.jpg">
+                    <div class="section_item_title">Accordions Video 1</div>
+                </div>
+                <div class="section_item item_02 section_panel_2">
+                    <img src="images/sections/airblock-account-create-1.jpg">
+                    <div class="section_item_title">Account Create 1</div>
+                </div>
+                <div class="section_item item_03 section_panel_1">
+                    <img src="images/sections/airblock-blog-recent-stories.jpg">
+                    <div class="section_item_title">Blog Recent</div>
+                </div>
+                <div class="section_item item_04 section_panel_2">
+                    <img src="images/sections/airblock-cards-1.jpg">
+                    <div class="section_item_title">Cards 1</div>
+                </div>
+                <div class="section_item item_05 section_panel_1">
+                    <img src="images/sections/airblock-carousel-portfolio-1.jpg">
+                    <div class="section_item_title">Carousel Portofolio 1</div>
+                </div>
+                <div class="section_item item_01 section_panel_2">
+                    <img src="images/sections/airblock-accordion-video-1.jpg">
+                    <div class="section_item_title">Accordions Video 1</div>
+                </div>
+                <div class="section_item item_02 section_panel_4">
+                    <img src="images/sections/airblock-account-create-1.jpg">
+                    <div class="section_item_title">Account Create 1</div>
+                </div>
+                <div class="section_item item_03 section_panel_2">
+                    <img src="images/sections/airblock-blog-recent-stories.jpg">
+                    <div class="section_item_title">Blog Recent</div>
+                </div>
+                <div class="section_item item_04 section_panel_3">
+                    <img src="images/sections/airblock-cards-1.jpg">
+                    <div class="section_item_title">Cards 1</div>
+                </div>
+                <div class="section_item item_05 section_panel_3">
+                    <img src="images/sections/airblock-carousel-portfolio-1.jpg">
+                    <div class="section_item_title">Carousel Portofolio 1</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="option_layer" id="layer_2">
+            <div class="layer_2_close">
+                <div class="layer_2_close-btn">
+                    <i class="material-icons">clear</i>
+                </div>
+            </div>
+            <div class="site_list">
+                <div class="site_item">
+                    <img src="images/templates/business.jpg">
+                    <div class="site_title">Business <span>Apply</span></div>
+                </div>
+                <div class="site_item">
+                    <img src="images/templates/company.jpg">
+                    <div class="site_title">Company <span>Apply</span></div>
+                </div>
+                <div class="site_item">
+                    <img src="images/templates/deal.jpg">
+                    <div class="site_title">Deal <span>Apply</span></div>
+                </div>
+                <div class="site_item">
+                    <img src="images/templates/marketing.jpg">
+                    <div class="site_title">Marketing <span>Apply</span></div>
+                </div>
+                <div class="site_item">
+                    <img src="images/templates/modern.jpg">
+                    <div class="site_title">Modern <span>Apply</span></div>
+                </div>
+                <div class="site_item">
+                    <img src="images/templates/saas.jpg">
+                    <div class="site_title">Saas <span>Apply</span></div>
+                </div>
+                <div class="site_item">
+                    <img src="images/templates/seo.jpg">
+                    <div class="site_title">Seo <span>Apply</span></div>
+                </div>
+                <div class="site_item">
+                    <img src="images/templates/shop.jpg">
+                    <div class="site_title">Shop <span>Apply</span></div>
+                </div>
+                <div class="site_item">
+                    <img src="images/templates/studio.jpg">
+                    <div class="site_title">Studio <span>Apply</span></div>
+                </div>
+                <div class="site_item">
+                    <img src="images/templates/business.jpg">
+                    <div class="site_title">Business <span>Apply</span></div>
+                </div>
+                <div class="site_item">
+                    <img src="images/templates/company.jpg">
+                    <div class="site_title">Company <span>Apply</span></div>
+                </div>
+                <div class="site_item">
+                    <img src="images/templates/deal.jpg">
+                    <div class="site_title">Deal <span>Apply</span></div>
+                </div>
+                <div class="site_item">
+                    <img src="images/templates/marketing.jpg">
+                    <div class="site_title">Marketing <span>Apply</span></div>
+                </div>
+                <div class="site_item">
+                    <img src="images/templates/modern.jpg">
+                    <div class="site_title">Modern <span>Apply</span></div>
+                </div>
+                <div class="site_item">
+                    <img src="images/templates/saas.jpg">
+                    <div class="site_title">Saas <span>Apply</span></div>
+                </div>
+                <div class="site_item">
+                    <img src="images/templates/seo.jpg">
+                    <div class="site_title">Seo <span>Apply</span></div>
+                </div>
+                <div class="site_item">
+                    <img src="images/templates/shop.jpg">
+                    <div class="site_title">Shop <span>Apply</span></div>
+                </div>
+                <div class="site_item">
+                    <img src="images/templates/studio.jpg">
+                    <div class="site_title">Studio <span>Apply</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="airblock_editor">
+        
+
+        <div id="airblock">
+            <!-- block content 03 -->
+            <div id="block-001" class="airblock_section air-block">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col col-md-9 col-sm-12 col-xs-12 text-center">
+                            <h2>Coworking in the heart of historic Carlton.</h2>
+                            <p class="lead">Stack is a collective of like-minded creatives working together in a converted church in the
+                                heart of Fitzroy North. Featuring multiple private and shared spaces with all the conveniences
+                                of a modern creative envrionment, you'll love working at Stack.</p>
+                        </div>
+                    </div>
+                    <div class="clear clearfix"></div>
+                    <div class="row pt-5">
+                        <div class="col-12 col-md-6 col-sm-12 col-xs-12">
+                            <img alt="image" class="img-fluid rounded mb-5" src="images/demo/cowork-6.jpg">
+                        </div>
+                        <div class="col-12 col-md-6 col-sm-12 col-xs-12">
+                            <img alt="image" class="img-fluid rounded mb-5" src="images/demo/knowledge-1.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- block content 03 -->
+            <div id="block-002" class="air-block bg-dark airblock_section">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col col-md-9 text-center">
+                            <h2>Coworking in the heart of historic Carlton.</h2>
+                            <p class="lead">Stack is a collective of like-minded creatives working together in a converted church in the
+                                heart of Fitzroy North. Featuring multiple private and shared spaces with all the conveniences
+                                of a modern creative envrionment, you'll love working at Stack.</p>
+                        </div>
+                    </div>
+                    <div class="clear clearfix"></div>
+                    <div class="row pt-5">
+                        <div class="col col-md-4 col-xs-12 col-sm-12">
+                            <img alt="image" class="img-fluid  rounded mb-5" src="images/demo/knowledge-1.jpg">
+                        </div>
+                        <div class="col col-md-4 col-xs-12 col-sm-12">
+                            <img alt="image" class="img-fluid rounded mb-5" src="images/demo/cowork-6.jpg">
+                        </div>
+                        <div class="col col-md-4 col-xs-12 col-sm-12">
+                            <img alt="image" class="img-fluid rounded mb-5" src="images/demo/cowork-7.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- block content 20 -->
+            <div id="block-003" class="air-block airblock_section" style="background-image: url(images/demo/cowork-5.jpg);">
+                <div class="container">
+                    <div class="row text-left">
+                        <div class="col-12 col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                            <div class="air-box air-touch">
+                                <h2>Air Design Blocks</h2>
+                                <p class="lead">When she reached the first hills of the Italic Mountains, she had a last view back on the
+                                    skyline of her hometown Bookmarksgrove</p>
+                                <hr class="short --left">
+                                <p class="small">50 uniquely designed content blocks ready</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- block content 03 -->
+            <div id="block-004" class="air-block airblock_section">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col col-md-9 text-center">
+                            <h2>Simple pricing for everyone</h2>
+                            <p class="lead">Whether you're looking for a full-time workspace or are just visiting Melbourne, we've got an
+                                option for everyone
+                            </p>
+                        </div>
+                    </div>
+                    <div class="clear clearfix"></div>
+                    <div class="row mt-5 align-items-center">
+                        <div class="col-12  col-xs-12 col-sm-12 col-md-4 col-lg-4  m-auto text-center">
+                            <div class="air-box air-touch p-4 br">
+                                <h2>Hobby</h2>
+                                <p class="lead">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
+
+                                <p class="text-h1 mt-5 mb-5">$99</p>
+
+                                <p>
+                                    <a href="https://www.froala.com" class="btn">Buy Now</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4  m-auto text-center pt-4 pt-lg-0">
+                            <div class="air-box air-touch p-4 br">
+                                <h2>Advanced</h2>
+                                <p class="lead">Separated they live in Bookmarksgrove right at the coast, a large language ocean.</p>
+
+                                <p class="text-h1 mt-5 mb-5">$299</p>
+
+                                <p>
+                                    <a href="https://www.froala.com" class="btn">Buy Now</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4  m-auto text-center pt-4 pt-lg-0">
+                            <div class="air-box air-touch p-4 br">
+                                <h2>Business</h2>
+                                <p class="lead">Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic
+                                    life.</p>
+
+                                <p class="text-h1 mb-5 mt-5">$799</p>
+
+                                <p>
+                                    <a href="https://www.froala.com" class="btn">Buy Now</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- block content 03 -->
+            <div class="air-block block-feature bg-grey  airblock_section">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col col-md-9 text-center">
+                            <h2>Air Block is a neat, feature-rich landing page template designed to showcase your product or
+                                service in style.</h2>
+                            <p class="lead">With multiple options for all sections - Air Block has the right stuff for your next landing
+                                page.</p>
+                        </div>
+                    </div>
+                    <div class="clear clearfix"></div>
+                    <div class="row mt-5">
+                        <div class="col-12 col-sm-4 col-xs-12 col-md-4 text-center feature">
+                            <img alt="Feature Image" class="rounded mb-5" src="images/demo/small7.jpg">
+                            <h5>Unique, Engaging Style</h5>
+                            <p>
+                                Launchkit has a bright, flexible persona that can be adapted to suit almost any use. Use Launchkit to sell or create a simple
+                                business website.</p>
+                        </div>
+
+                        <div class="col-12 col-sm-4 col-xs-12 col-md-4 text-center feature">
+                            <img alt="Feature Image" class="rounded mb-5" src="images/demo/small8.jpg">
+                            <h5>Built for mobile and up</h5>
+                            <p>
+                                Tested comprehensively on a number of mobile devices, Launchkit is well prepared to impress your mobile audience.
+                                <br>
+                            </p>
+                        </div>
+
+                        <div class="col-12 col-sm-4 col-xs-12 col-md-4 text-center feature">
+                            <img alt="Feature Image" class="rounded mb-5 " src="images/demo/small6.jpg">
+                            <h5>Variant Builder included</h5>
+                            <p>
+                                Themeforest's most popular HTML page builder just keeps getting better, Smart controls and font options give you complete
+                                control.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- block content 03 -->
+            <div class="air-block  airblock_section">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-md-6 col-sm-12 col-xs-12 text-center">
+                            <img class="rounded mb-5" src="images/demo/small5.jpg">
+                        </div>
+                        <div class="col-12 col-md-5 col-sm-12 col-xs-12  ml-md-auto">
+                            <h2>Variant Page Builder
+                                <br class="hidden-xs hidden-sm"> makes editing a breeze.</h2>
+                            <p>Launchkit ships with over 50 uniquely designed content blocks ready to be fitted out with your
+                                copy and images. Get a head-start with one of the included page demos or start experimenting
+                                with your own layouts in Variant.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- block content 03 -->
+            <div class="air-block bg-grey  airblock_section">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-md-5  col-sm-12 col-xs-12 ml-md-auto text-right">
+                            <h2>Variant Page Builder
+                                <br class="hidden-xs hidden-sm"> makes editing a breeze.</h2>
+                            <p>Launchkit ships with over 50 uniquely designed content blocks ready to be fitted out with your
+                                copy and images. Get a head-start with one of the included page demos or start experimenting
+                                with your own layouts in Variant.
+                            </p>
+                        </div>
+                        <div class="col-12 col-md-5   col-sm-12 col-xs-12 ml-md-auto text-center">
+                            <img class="mb-5" src="images/demo/phone1.png">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- block content 03 -->
+            <div class="air-block jarallax imagebg fullheight relative airblock_section" data-jarallax data-speed="0.2" data-overlay="3">
+                <img class="jarallax-img" src="images/demo/drone-2.jpg" alt="">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-md-4 col-sm-12 col-xs-12 ml-md-auto">
+                            <h2>A New Perspective</h2>
+                            <p class="lead">Elevate the production of your next advertisement, trailer or real estate listing with professionally
+                                captured and edited ariel footage — Simply describe your concept and let our skilled team
+                                get the perfect shot.</p>
+                            <hr class="short --left">
+                            <p class="small">50 uniquely designed content blocks ready to be fitted out</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="block-01" class="airblock_section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1>1.1 Lorem ipsum dolor sit amet, consectetur</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit exercitationem eaque aperiam
+                                rem quia quibusdam dolor ducimus quo similique eos pariatur nostrum aliquam nam eius, doloremque
+                                quis voluptatum unde. Porro voluptates aspernatur voluptate ipsam, magni vero. Accusamus,
+                                iusto tempore id!</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae laboriosam, excepturi quas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="block-02" class="airblock_section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h2>2.1 Lorem ipsum dolor</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea facilis vel aliquam aspernatur dolor
+                                placeat totam saepe perferendis. Odio quia vel sed eveniet cupiditate, illum doloremque sint
+                                veniam eum? Corporis?</p>
+                        </div>
+                        <div class="col-md-4">
+                            <h2>2.2 Pariatur reprehenderit</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo adipisci ipsa, consequuntur cum,
+                                sunt dolores veniam. Enim inventore in dolore deserunt vitae sequi nemo!</p>
+                        </div>
+                        <div class="col-md-4">
+                            <h2>2.3 Pariatur reprehenderit</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea excepturi ducimus numquam aut error
+                                corporis aspernatur ipsum quos eius culpa!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="block-03" class="airblock_section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <h2>3.1 Lorem ipsum dolor.</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro distinctio atque molestiae optio,
+                                consequuntur? Iusto ratione cumque dolor aut dolore!</p>
+
+                        </div>
+
+                        <div class="col-md-4">
+                            <h2>3.2 Lusto ratione</h2>
+                            <p> saepe non vel, cupiditate illum ipsam velit deleniti natus incidunt impedit molestias dolore
+                                quos dolores enim.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /#myGrid -->
+
+        
+    </div>
+
+    
+</div>
+
+
+
+
+<!-- end your code -->
+
+
+
+
+<script src="assets/libs/jquery-1.11.2.js"></script>
+<script src="assets/libs/jquery-ui.js"></script>
+<script src="assets/libs/tinymce/tinymce.min.js"></script>
+<script src="assets/libs/tinymce/jquery.tinymce.min.js"></script>
+<!-- build:js js/combined.js -->
+<script src="bower_components/popper.js/dist/umd/popper.min.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="bower_components/jarallax/dist/jarallax.min.js"></script>
+
+<!-- endbuild -->
+<!-- Grid editor javascript -->
+
+<script src="assets/js/jquery.airblock.js"></script>
+
+<script>
+    
+    $(function() {
+        // Initialize grid editor
+        $('#airblock').airblock({
+            new_row_layouts: [[12], [6,6], [9,3]],
+            //content_types: ['tinymce'],
+        });
+        
+        // Get resulting html
+        var html = $('#airblock').airblock('getHtml');
+        console.log(html);
+       
+        $('[data-toggle="tooltip"]').tooltip()
+    });
+    jarallax(document.querySelectorAll('.jarallax'), {
+        speed: 0.2
+    });
+    
+</script>
+</html>
